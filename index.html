@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VGIPL</title>
+</head>
+<!-- html code start form hear -->
+
+<body>
+<header>
+<div class="logo">Virtual Galaxy</div>
+<nav>
+<a onclick="showPage('home')">Home</a>
+<a onclick="showPage('explore')">Explore</a>
+<a onclick="showPage('ipo')">IPO Info</a>
+<a onclick="showPage('investor')">Investor Info</a>
+<a onclick="showPage('contact')">Contact</a>
+</nav>
+<link rel="stylesheet" href="style.css">
+</header>
+
+
+<!-- HOME -->
+
+<div id="home" class="page" style="display:block;">
+    <div class="hero">
+    <div class="hero-text"> <h1>Next Generation Core Banking Platform</h1>
+    <p>Powering modern banks with secure digital banking and real-time financial systems.</p>
+</div>
+
+<!-- ABOUT VIRTUAL GALAXY -->
+<section class="about">
+<h2>About Virtual Galaxy</h2>
+<p>
+Virtual Galaxy Infotech is a technology company providing 
+core banking solutions, fintech software and digital banking 
+platforms for cooperative banks and financial institutions.
+What makes VGIL a leading IT solutions provider
+with 28 years of robust experience
+Our journey began in 1997, with a steadfast commitment to client satisfaction and exceptional service standards. 
+From the outset, we've been dedicated to innovation and continuous improvement, driving our growth. We're not sprint racers; we're marathon runners, enduring and thriving for the long haul.
+</p>
+<p>
+The company delivers secure banking infrastructure,
+digital payment systems, MIS reporting and AI-driven
+financial analytics.
+</p>
+<button class="btn" onclick="showPage('explore')">Explore Solutions</button>
+</section>
+
+<!-- STATS HAPPY CLIENT -->
+<section class="glass-stats">
+  <div class="glass-card left">
+    <h3>Happy Clients</h3>
+    <div class="number">180+</div>
+    <p>Banks & Financial Institutions</p>
+  </div>
+  <div class="glass-card center">
+    <h3>Experience</h3>
+    <div class="number">28+</div>
+    <p>Years In Banking Technology</p>
+  </div>
+  <div class="glass-card right">
+    <h3>Employees</h3>
+    <div class="number">400+</div>
+    <p>Skilled Tech Professionals</p>
+  </div>
+</section>
+
+
+<!-- RBI COMPLIANCE -->
+<section class="rbi">
+<h2>RBI Compliance & Secure Banking</h2>
+<div class="grid rbi-grid">
+<div class="card reveal rbi-card">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" class="rbi-icon">
+<h3>RBI Guidelines</h3>
+<p>Banking platform fully compliant with Reserve Bank of India regulations ensuring transparency and regulatory security.</p>
+</div>
+
+<div class="card reveal rbi-card">
+<img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" class="rbi-icon">
+<h3>Secure Transactions</h3>
+<p>Advanced encryption, multi-factor authentication and cyber security architecture for safe financial operations.</p>
+</div>
+
+<div class="card reveal rbi-card">
+<img src="https://cdn-icons-png.flaticon.com/512/2331/2331945.png" class="rbi-icon">
+<h3>Real-Time Banking</h3>
+<p>Fast core banking infrastructure processing transactions instantly with high reliability and scalability.</p>
+</div>
+
+<div class="card reveal rbi-card">
+<img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" class="rbi-icon">
+<h3>Data Protection</h3>
+<p>Enterprise level data protection ensuring safety of sensitive banking information and digital assets.</p>
+</div>
+
+<div class="card reveal rbi-card">
+<img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" class="rbi-icon">
+<h3>Data Protection</h3>
+<p>Enterprise level data protection ensuring safety of sensitive banking information and digital assets.</p>
+</div>
+
+<div class="card reveal rbi-card">
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135706.png" class="rbi-icon">
+<h3>RBI Guidelines</h3>
+<p>Banking platform fully compliant with Reserve Bank of India regulations ensuring transparency and regulatory security.</p>
+</div>
+</div>
+</div>
+</section>
+
+ <!-- Core Banking Capabilities -->
+ <section class="features">
+  <h2>Core Banking Capabilities</h2>
+  <div class="grid feature-grid">
+    <div class="card slide-left">Account Management</div>
+    <div class="card slide-right">Loan Processing</div>
+    <div class="card slide-left">Digital Payments</div>
+    <div class="card slide-right">AI Analytics</div>
+  </div>
+</section>
+
+</div>
+
+
+<!-- EXPLORE PAGE -->
+ <div id="explore" class="page explore-page">
+    <div class="back-btn" onclick="goBack()">← Back</div>
+        <h2 class="explore-title">Explore Our Solutions</h2>
+        <p class="explore-sub">Powerful fintech products and enterprise services designed for modern banking.</p>
+    <div class="explore-wrapper">
+        <div class="explore-card product-card" onclick="showPage('products')">
+           <div class="card-glow"></div>
+    <div class="card-content">
+    <h3>Products</h3>
+        <p>Advanced core banking software, digital payment systems and enterprise fintech platforms.</p>
+    <span class="explore-btn">View Products →</span>
+</div>
+</div>
+
+<div class="explore-card service-card" onclick="showPage('services')">
+    <div class="card-glow"></div>
+    <div class="card-content">
+    <h3>Services</h3><p>Enterprise IT services, AI solutions and digital transformation support.</p>
+        <span class="explore-btn">View Services →</span>
+    </div>      
+    </div>
+    </div>
+</div>
+
+
+
+<!-- PRODUCTS -->
+<div id="products" class="page explore-page">
+<div class="back-btn" onclick="showPage('explore')">← Back</div>
+    <h2 class="explore-title">Our Products</h2>
+    <p class="explore-sub">Innovative banking and fintech software solutions.</p>
+<div class="explore-wrapper">
+
+<div class="explore-card" onclick="showPage('corebanking-detail')">
+    <h3>Core Banking</h3>
+    <p>Modern digital banking platform.</p>
+</div>
+
+
+<div class="explore-card" onclick="showPage('mis-detail')">
+    <h3>MIS Solution</h3> <p>Advanced reporting system.</p>
+</div>
+
+
+<div class="explore-card" onclick="showPage('Post-Mortem')">
+    <h3>Post Mortem MGMT</h3> <p>Incident investigation system.</p>
+</div>
+
+<div class="explore-card" onclick="showPage('Fin-Flow')">
+    <h3>Fin Flow</h3> <p>Financial workflow automation.</p>
+</div>
+
+<div class="explore-card" onclick="showPage('cyber-detail')">
+    <h3>Cyber Security</h3> <p>Enterprise security architecture.</p>
+</div>
+
+<div class="explore-card" onclick="showPage('erp-detail')"> 
+    <h3>ERP Solution</h3> <p>Enterprise resource planning system.</p>
+</div>
+
+<div class="explore-card" onclick="showPage('digital-card')">  
+    <h3>Digital Payment</h3> <p>Secure online payment platform.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- SERVICES -->
+ 
+<div id="services" class="page explore-page">
+    <div class="back-btn" onclick="goBack()">← Back</div>
+    <h2>Our Services</h2>
+<div class="grid">
+
+<div class="card" onclick="showPage('core')">
+    <h3>Core Banking</h3> <p>Modern digital banking platform.</p>
+</div>
+
+<div class="card" onclick="showPage('mis')">
+    <h3>MIS Solution</h3> <p>Advanced reporting system.</p>
+</div>
+
+<div class="card" onclick="showPage('post')">
+    <h3>Post Mortem MGMT</h3> <p>Incident investigation system.</p>
+</div>
+
+<div class="card" onclick="showPage('finflow')">
+    <h3>Fin Flow</h3> <p>Financial workflow automation.</p>
+</div>
+
+<div class="card" onclick="showPage('cyber')">
+    <h3>Cyber Security</h3> <p>Enterprise security architecture.</p>
+</div>
+
+<div class="card" onclick="showPage('erp')">
+    <h3>ERP Solution</h3> <p>Enterprise resource planning system.</p>
+</div>
+
+<div class="card" onclick="showPage('digital')">
+    <h3>Digital Payment</h3> <p>Secure online payment platform.</p>
+</div>
+</div>
+</div>
+
+
+<!-- PRODUCT DETAIL PAGES -->
+<div id="core" class="page"><h2>Core Banking Solution</h2><p>Complete banking automation platform for financial institutions.</p></div>
+<div id="mis" class="page"><h2>MIS Solution</h2><p>Advanced reporting and management analytics system.</p></div>
+<div id="post" class="page"><h2>Post-Mortem MGMT</h2><p>Incident investigation and compliance tracking system.</p></div>
+<div id="finflow" class="page"><h2>Fin Flow</h2><p>Smart financial workflow management solution.</p></div>
+<div id="cyber" class="page"><h2>Cyber Security</h2><p>End-to-end enterprise security architecture.</p></div>
+<div id="erp" class="page"><h2>ERP Solution</h2><p>Integrated enterprise resource planning system.</p></div>
+<div id="digital" class="page"><h2>Digital Payment</h2><p>Secure digital and online payment processing system.</p></div>
+
+
+<!-- SERVICE DETAIL PAGES -->
+ <div id="appdev" class="page"><h2>Application Development</h2><p>Custom enterprise-grade software development.</p></div>
+<div id="digitals" class="page"><h2>Digital Solution</h2><p>Modern digital transformation solutions.</p></div>
+<div id="infra" class="page"><h2>IT Infrastructure</h2><p>Complete infrastructure planning & deployment.</p></div>
+<div id="ai" class="page"><h2>AI & ML</h2><p>Artificial Intelligence and Machine Learning solutions.</p></div>
+<div id="vgst" class="page"><h2>VGST</h2><p>Virtual Galaxy Smart Technology solutions.</p></div>
+<div id="frdc" class="page"><h2>FR & DC</h2><p>Fraud Risk & Data Center management solutions.</p></div>
+
+
+<!-- IPO DETAIL PAGES -->
+<div id="ipo" class="page ipo-page">
+        <div class="back-btn" onclick="goBack()">← Back</div>
+        <h2>IPO Information</h2>
+    <div class="grid">
+        <div class="card ipo-card"> Draft Red Herring Prospectus (DRHP) </div>
+        <div class="card ipo-card"> Addendum to the DRHP </div>
+        <div class="card ipo-card"> RHP - Virtual Galaxy Infotech Limited </div>
+        <div class="card ipo-card"> Virtual Galaxy Investor Presentation - 25032025 </div>
+        <div class="card ipo-card"> Virtual Galaxy Prospectus </div>
+    </div>
+</div>
+
+
+
+<!-- investor DETAIL PAGES -->
+<div id="investor" class="page investor-page">
+        <div class="back-btn" onclick="goBack()">← Back</div>
+        <h2>Investor Information</h2>
+    <p>Investor relations section containing company financial reports,corporate governance information and shareholder updates.</p>
+    <div class="grid">
+        <div class="card"> <h3>Annual Reports</h3> <p>Company financial reports and financial statements.</p> </div>
+        <div class="card"> <h3>Shareholder Information</h3> <p>Information for investors and stakeholders.</p> </div>
+        <div class="card"> <h3>Corporate Governance</h3> <p>Company governance policies and compliance details.</p> </div>
+    </div>
+</div>
+
+
+
+<!-- CONTACT -->
+
+<div id="contact" class="page contact-page">
+
+    <h2>Contact Virtual Galaxy</h2> 
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE MAP -->
+        <div class="contact-left">
+            <iframe src="https://maps.google.com/maps?q=Virtual%20Galaxy%20Infotech%20Nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+            <div class="address-box">
+                <h3>Office Address</h3> 
+                <p>
+                    Virtual Galaxy Infotech Pvt Ltd<br>
+                    IT Park, Nagpur, Maharashtra<br>
+                    India
+                </p>
+
+                <p>Phone: +91 9876543210</p> 
+                <p>Email: info@virtualgalaxy.com</p>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE CONTACT FORM -->
+        <div class="contact-right">
+            <div class="about-page"></div>
+            <h3>Contact / Inquiry</h3> 
+            <p>Please tell us why you want to contact Virtual Galaxy.</p>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+
+                <select required>
+                    <option value="">Select Purpose</option>
+                    <option>Investment Inquiry</option>
+                    <option>Job Opportunity</option>
+                    <option>Software / Product Inquiry</option>
+                    <option>Business Partnership</option>
+                    <option>Other</option>
+                </select>
+
+                <textarea placeholder="Write your message..." rows="5"></textarea>
+
+                <button class="btn">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- CORE BANKING FULL PAGE -->
+<div id="corebanking-detail" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('products')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>Core Banking Solution</h1>
+        <p>Complete digital banking system for modern financial institutions.</p>
+    </section>
+
+       <section class="detail-content">
+        <h2>What is Core Banking?</h2>
+        <p>
+            Core Banking System allows banks to manage accounts, transactions,
+            loans and customer data in real-time across all branches.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Account Management</li>
+            <li>✔ Loan Processing</li>
+            <li>✔ Real-time Transactions</li>
+            <li>✔ Mobile & Internet Banking</li>
+            <li>✔ Security & RBI Compliance</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Faster banking operations, improved customer experience,
+            secure transactions and centralized data management.
+        </p>
+    </section>
+
+</div>
+
+
+ <!-- MIS FULL PAGE -->
+<div id="mis-detail" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('products')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>MIS Solution</h1>
+        <p>Advanced reporting and analytics system for banking & finance.</p>
+    </section>
+
+
+
+    <section class="detail-content">
+        <h2>What is MIS?</h2>
+        <p>
+            MIS (Management Information System) helps organizations collect,
+            process and analyze business data for decision making.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Real-time Reports</li>
+            <li>✔ Data Analytics Dashboard</li>
+            <li>✔ Custom Report Generation</li>
+            <li>✔ Financial Insights</li>
+            <li>✔ Risk Monitoring</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Improves decision-making, enhances data visibility and provides
+            accurate business insights.
+        </p>
+    </section>
+
+</div>
+
+
+ <!-- ERP FULL PAGE -->
+  <div id="erp-detail" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('products')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>ERP Solution</h1>
+        <p>Integrated enterprise system to manage business operations.</p>
+    </section>
+
+ 
+
+    <section class="detail-content">
+        <h2>What is ERP?</h2>
+        <p>
+            ERP (Enterprise Resource Planning) integrates all business
+            processes like finance, HR, inventory and operations into one system.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Finance Management</li>
+            <li>✔ HR & Payroll</li>
+            <li>✔ Inventory Tracking</li>
+            <li>✔ Workflow Automation</li>
+            <li>✔ Real-time Data Sync</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Increases productivity, reduces manual work and improves
+            overall business efficiency.
+        </p>
+    </section>
+
+</div>
+
+
+<!-- cyber-detail FULL PAGE -->
+<div id="cyber-detail" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('products')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>Cyber Security</h1>
+        <p>Protecting banking systems with advanced security solutions.</p>
+    </section>
+
+  
+    <section class="detail-content">
+        <h2>What is Cyber Security?</h2>
+        <p>
+            Cyber Security protects systems, networks and data from
+            digital attacks, threats and unauthorized access.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Data Encryption</li>
+            <li>✔ Firewall Protection</li>
+            <li>✔ Multi-factor Authentication</li>
+            <li>✔ Threat Detection</li>
+            <li>✔ Secure Transactions</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Ensures data safety, prevents cyber attacks and builds
+            trust with customers.
+        </p>
+    </section>
+
+</div>
+
+
+<!-- digital-detail FULL PAGE -->
+ <div id="digital-detail" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('products')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>Digital Payment System</h1>
+        <p>Secure and fast online payment solutions for modern banking.</p>
+    </section>
+
+ 
+    <section class="detail-content">
+        <h2>What is Digital Payment?</h2>
+        <p>
+            Digital payment systems allow users to transfer money online
+            using mobile apps, cards and internet banking.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ UPI & Mobile Banking</li>
+            <li>✔ Card Payments (Debit/Credit)</li>
+            <li>✔ Instant Transactions</li>
+            <li>✔ Secure Encryption</li>
+            <li>✔ Payment Gateway Integration</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Faster payments, cashless economy support and secure financial transactions.
+        </p>
+    </section>
+
+</div>
+
+
+<!-- finflow-detail FULL PAGE -->
+  <div id="finflow-detail" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('products')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>Fin Flow System</h1>
+        <p>Smart financial workflow automation platform.</p>
+    </section>
+
+ 
+    <section class="detail-content">
+        <h2>What is Fin Flow?</h2>
+        <p>
+            Fin Flow automates financial processes such as approvals,
+            transactions and reporting within organizations.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Automated Approval Workflows</li>
+            <li>✔ Financial Tracking</li>
+            <li>✔ Real-time Monitoring</li>
+            <li>✔ Integration with Banking Systems</li>
+            <li>✔ Custom Workflow Design</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Reduces manual work, increases efficiency and ensures
+            transparency in financial operations.
+        </p>
+    </section>
+
+</div>
+
+
+<!-- post-detail FULL PAGE -->
+<div id="post-detail" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('products')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>Post-Mortem Management</h1>
+        <p>Incident analysis and compliance tracking system.</p>
+    </section>
+
+  
+    <section class="detail-content">
+        <h2>What is Post-Mortem Management?</h2>
+        <p>
+            This system helps organizations analyze system failures,
+            incidents and security breaches to prevent future issues.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Incident Tracking</li>
+            <li>✔ Root Cause Analysis</li>
+            <li>✔ Compliance Reporting</li>
+            <li>✔ Audit Logs</li>
+            <li>✔ Risk Management</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Improves system reliability, reduces risks and ensures
+            compliance with regulatory standards.
+        </p>
+    </section>
+
+</div>
+    <script src="script.js"></script>
+    </body>
+    </html>
+<!-- END OF HTML-->
