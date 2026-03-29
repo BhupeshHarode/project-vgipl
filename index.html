@@ -10,13 +10,233 @@
 <div class="logo">Virtual Galaxy</div>
 <nav>
 <a onclick="showPage('home')">Home</a>
+<a onclick="showPage('WE')">We</a>
 <a onclick="showPage('explore')">Explore</a>
 <a onclick="showPage('ipo')">IPO Info</a>
 <a onclick="showPage('investor')">Investor Info</a>
 <a onclick="showPage('contact')">Contact</a>
+
 </nav>
 <link rel="stylesheet" href="style.css">
 </header>
+
+
+
+
+<!-- we page  -->
+<div id="WE" class="page" style="display:none; text-align:center; padding:20px;">
+    <h1>Our Team</h1>
+
+<!-- Leadership -->
+<h2>MD</h2>
+<div class="top-team">
+
+<div class="team-member reveal active"
+data-img="md.avif"
+data-name="Mr. Avinash Shende"
+data-role="Chairman & CFO"
+data-exp="Since 2010"
+data-desc="Mr. Avinash Shende is a visionary leader with extensive experience in financial management, corporate strategy, and business growth. He has played a key role in strengthening the company’s financial structure and guiding long-term expansion with strong governance practices."
+onclick="openProfileFromCard(this)">
+<img src="md.avif">
+<h3>Mr. Avinash Shende</h3>
+<p>Promoter, Chairman, Executive Director & CFO</p>
+</div>
+
+<div class="team-member reveal active"
+data-img="cofounder.jfif"
+data-name="Mr. Sachin Pande"
+data-role="Managing Director & CTO"
+data-exp="Since 2012"
+data-desc="Mr. Sachin Pande is a technology-focused leader with expertise in fintech systems, software development, and innovation. He leads the company’s technical vision and ensures cutting-edge digital solutions are delivered efficiently."
+onclick="openProfileFromCard(this)">
+<img src="cofounder.jfif">
+<h3>Mr. Sachin Pande</h3>
+<p>Promoter, Managing Director & CTO</p>
+</div>
+
+</div>
+
+
+<h2>Directors</h2>
+<div class="top-team">
+
+<div class="team-member reveal active"
+data-img="zade.jpg"
+data-name="Mr. Bharat Zade"
+data-role="Director - Operations"
+data-exp="Since 2015"
+data-desc="Mr. Bharat Zade manages operations and digital transformation initiatives, ensuring efficiency and smooth execution across departments with a focus on innovation and growth."
+onclick="openProfileFromCard(this)">
+<img src="zade.jpg">
+<h3>Mr. Bharat Zade</h3>
+<p>Director - Operations</p>
+</div>
+
+<div class="team-member reveal active"
+data-img="Mr.Harshjit Deshmukh.jpg"
+data-name="Mr. Harshjit Deshmukh"
+data-role="Director - Business Development"
+data-exp="Since 2016"
+data-desc="Mr. Harshjit Deshmukh specializes in domestic business growth, partnerships, and strategic expansion. He plays a key role in driving revenue and market presence."
+onclick="openProfileFromCard(this)">
+<img src="Mr.Harshjit Deshmukh.jpg">
+<h3>Mr. Harshjit Deshmukh</h3>
+<p>Director - Domestic Business Development</p>
+</div>
+
+<div class="team-member reveal active"
+data-img="Alhad Hardas.jpg"
+data-name="Mr. Alhad Hardas"
+data-role="Director - Banking Services"
+data-exp="Since 2017"
+data-desc="Mr. Alhad Hardas brings deep expertise in banking domain services, helping the company deliver strong fintech and banking solutions aligned with industry needs."
+onclick="openProfileFromCard(this)">
+<img src="Alhad Hardas.jpg">
+<h3>Mr. Alhad Hardas</h3>
+<p>Director - Banking Domain Services</p>
+</div>
+
+<div class="team-member reveal active"
+data-img="Satish Kukde.jpg"
+data-name="Mr. Satish Kukde"
+data-role="Principal Database Architect"
+data-exp="Since 2014"
+data-desc="Mr. Satish Kukde is an expert in database architecture and system optimization. He ensures high performance, scalability, and reliability of enterprise systems."
+onclick="openProfileFromCard(this)">
+<img src="Satish Kukde.jpg">
+<h3>Mr. Satish Kukde</h3>
+<p>Principal Database Architect</p>
+</div>
+
+</div>
+
+
+<h2>Development Team</h2>
+<div class="team-container">
+
+<div class="team-member reveal"
+data-img="dev1.jpg"
+data-name="Prakash Wankede"
+data-role="Frontend Developer"
+data-exp="Since 2020"
+data-desc="Prakash Wankede specializes in UI/UX and frontend technologies, creating responsive and visually appealing interfaces for modern web applications."
+onclick="openProfileFromCard(this)">
+<img src="dev1.jpg">
+<p>Prakash Wankede - Frontend Developer</p>
+</div>
+
+<div class="team-member reveal"
+data-img="vijay.jpg"
+data-name="Vijay Nimje"
+data-role="Backend Developer"
+data-exp="Since 2019"
+data-desc="Vijay Nimje focuses on backend systems, APIs, and server-side logic, ensuring robust performance and seamless integration across platforms."
+onclick="openProfileFromCard(this)">
+<img src="vijay.jpg">
+<p>Vijay Nimje - Backend Developer</p>
+</div>
+
+</div>
+
+
+<h2>Marketing Team</h2>
+<div class="team-container">
+
+<div class="team-member reveal"
+data-img="m1.jpg"
+data-name="Rohit"
+data-role="Marketing Manager"
+data-exp="Since 2018"
+data-desc="Rohit leads marketing strategies, campaigns, and branding initiatives to increase visibility and customer engagement across digital platforms."
+onclick="openProfileFromCard(this)">
+<img src="m1.jpg">
+<p>Rohit - Marketing Manager</p>
+</div>
+
+<div class="team-member reveal"
+data-img="kmal.jpg"
+data-name="Kamal"
+data-role="SEO Specialist"
+data-exp="Since 2021"
+data-desc="Kamal is an SEO expert who improves website ranking, traffic, and search engine visibility through advanced optimization techniques."
+onclick="openProfileFromCard(this)">
+<img src="kmal.jpg">
+<p>Kamal - SEO Specialist</p>
+</div>
+
+</div>
+
+
+<h2>HR Department</h2>
+<div class="team-container">
+
+<div class="team-member reveal"
+data-img="hr1.jpg"
+data-name="Priyanka Baidhya"
+data-role="HR Manager"
+data-exp="Since 2017"
+data-desc="Priyanka Baidhya handles recruitment, employee engagement, and HR policies, ensuring a positive and productive work environment."
+onclick="openProfileFromCard(this)">
+<img src="hr1.jpg">
+<p>Priyanka Baidhya - HR Manager</p>
+</div>
+
+<div class="team-member reveal"
+data-img="vikas.jpg"
+data-name="Vikas"
+data-role="SEO Specialist"
+data-exp="Since 2022"
+data-desc="Vikas works on SEO strategies, keyword optimization, and analytics to enhance online reach and performance."
+onclick="openProfileFromCard(this)">
+<img src="vikas.jpg">
+<p>Vikas - SEO Specialist</p>
+</div>
+
+</div>
+</div>
+
+
+<!-- POPUP MODAL -->
+<div id="profileModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        
+        <img id="modalImg" src="">
+        <h2 id="modalName"></h2>
+        <p id="modalRole"></p>
+        <p id="modalExp"></p>
+    </div>
+</div>
+
+<!-- PROFILE PAGE (HIDDEN) -->
+<div id="profilePage" class="page" style="display:none;">
+
+    <div class="profile-container">
+
+        <div class="left">
+            <img id="pImg">
+        </div>
+
+        <div class="right">
+            <h1 id="pName"></h1>
+            <p id="pRole"></p>
+            <p id="pExp"></p>
+            
+
+            <button onclick="goBack()">⬅ Back</button>
+
+            <p id="pDesc"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- end of we  -->
+
+
 
 
 <!-- HOME -->
@@ -169,11 +389,11 @@ financial analytics.
 </div>
 
 
-<div class="explore-card" onclick="showPage('Post-Mortem')">
+<div class="explore-card" onclick="showPage('post-mortem-mgmt')">
     <h3>Post Mortem MGMT</h3> <p>Incident investigation system.</p>
 </div>
 
-<div class="explore-card" onclick="showPage('Fin-Flow')">
+<div class="explore-card" onclick="showPage('finflow-detail')">
     <h3>Fin Flow</h3> <p>Financial workflow automation.</p>
 </div>
 
@@ -185,7 +405,7 @@ financial analytics.
     <h3>ERP Solution</h3> <p>Enterprise resource planning system.</p>
 </div>
 
-<div class="explore-card" onclick="showPage('digital-card')">  
+<div class="explore-card" onclick="showPage('digital-detail')">  
     <h3>Digital Payment</h3> <p>Secure online payment platform.</p>
 </div>
 
@@ -200,69 +420,304 @@ financial analytics.
     <h2>Our Services</h2>
 <div class="grid">
 
-<div class="card" onclick="showPage('core')">
-    <h3>Core Banking</h3> <p>Modern digital banking platform.</p>
+<div class="card" onclick="showPage('appdev')">
+    <h3>Application Development</h3> <p>Modern digital banking platform.</p>
 </div>
 
-<div class="card" onclick="showPage('mis')">
-    <h3>MIS Solution</h3> <p>Advanced reporting system.</p>
+<div class="card" onclick="showPage('ai')">
+    <h3>AL & ML </h3> <p>Advanced reporting system.</p>
 </div>
 
-<div class="card" onclick="showPage('post')">
-    <h3>Post Mortem MGMT</h3> <p>Incident investigation system.</p>
+<div class="card" onclick="showPage('digitals')">
+    <h3>Digital Solution</h3> <p>Incident investigation system.</p>
 </div>
 
-<div class="card" onclick="showPage('finflow')">
-    <h3>Fin Flow</h3> <p>Financial workflow automation.</p>
+<div class="card" onclick="showPage('infra')">
+    <h3>It Infrastructure Development</h3> <p>Financial workflow automation.</p>
 </div>
 
-<div class="card" onclick="showPage('cyber')">
-    <h3>Cyber Security</h3> <p>Enterprise security architecture.</p>
+<div class="card" onclick="showPage('vgst')">
+    <h3>Vgst</h3> <p>Enterprise security architecture.</p>
 </div>
 
-<div class="card" onclick="showPage('erp')">
-    <h3>ERP Solution</h3> <p>Enterprise resource planning system.</p>
+<div class="card" onclick="showPage('frdc')">
+    <h3>Dr & Cr</h3> <p>Enterprise resource planning system.</p>
 </div>
 
-<div class="card" onclick="showPage('digital')">
-    <h3>Digital Payment</h3> <p>Secure online payment platform.</p>
+<div class="card" onclick="showPage('Mobile')">
+    <h3>Mobile Computing</h3> <p>Secure online payment platform.</p>
 </div>
 </div>
 </div>
-
-
-<!-- PRODUCT DETAIL PAGES -->
-<div id="core" class="page"><h2>Core Banking Solution</h2><p>Complete banking automation platform for financial institutions.</p></div>
-<div id="mis" class="page"><h2>MIS Solution</h2><p>Advanced reporting and management analytics system.</p></div>
-<div id="post" class="page"><h2>Post-Mortem MGMT</h2><p>Incident investigation and compliance tracking system.</p></div>
-<div id="finflow" class="page"><h2>Fin Flow</h2><p>Smart financial workflow management solution.</p></div>
-<div id="cyber" class="page"><h2>Cyber Security</h2><p>End-to-end enterprise security architecture.</p></div>
-<div id="erp" class="page"><h2>ERP Solution</h2><p>Integrated enterprise resource planning system.</p></div>
-<div id="digital" class="page"><h2>Digital Payment</h2><p>Secure digital and online payment processing system.</p></div>
 
 
 <!-- SERVICE DETAIL PAGES -->
- <div id="appdev" class="page"><h2>Application Development</h2><p>Custom enterprise-grade software development.</p></div>
-<div id="digitals" class="page"><h2>Digital Solution</h2><p>Modern digital transformation solutions.</p></div>
-<div id="infra" class="page"><h2>IT Infrastructure</h2><p>Complete infrastructure planning & deployment.</p></div>
-<div id="ai" class="page"><h2>AI & ML</h2><p>Artificial Intelligence and Machine Learning solutions.</p></div>
-<div id="vgst" class="page"><h2>VGST</h2><p>Virtual Galaxy Smart Technology solutions.</p></div>
-<div id="frdc" class="page"><h2>FR & DC</h2><p>Fraud Risk & Data Center management solutions.</p></div>
+<!-- Services page in detial -->
+     <!-- Application Development -->
+    <div id="appdev" class="page detail-page">
+    <div class="back-btn" onclick="showPage('services')">← Back</div>
+    <section class="detail-hero">
+        <h1>Application Development</h1>
+        <p>Custom enterprise-grade software solutions.</p>
+    </section>
+
+    <section class="detail-content">
+        <h2>What is Application Development?</h2>
+        <p>
+            Application development involves designing and building software
+            solutions tailored to business needs, ensuring scalability and performance.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Custom Software Development</li>
+            <li>✔ Web & Mobile Applications</li>
+            <li>✔ Scalable Architecture</li>
+            <li>✔ API Integration</li>
+            <li>✔ Cloud Deployment</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Improves business efficiency, enhances user experience and supports digital transformation.
+        </p>
+    </section>
+
+    </div>
+
+
+    <!-- AI & ML Solutions -->
+    <div id="ai" class="page detail-page">
+    <div class="back-btn" onclick="showPage('services')">← Back</div>
+    <section class="detail-hero">
+        <h1>AI & ML Solutions</h1>
+        <p>Smart automation using Artificial Intelligence.</p>
+    </section>
+
+    <section class="detail-content">
+        <h2>What is AI & ML?</h2>
+        <p>
+            AI & ML technologies enable systems to learn from data,
+            automate processes and provide predictive insights.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Predictive Analytics</li>
+            <li>✔ Data Modeling</li>
+            <li>✔ Automation Systems</li>
+            <li>✔ Chatbots & AI Assistants</li>
+            <li>✔ Fraud Detection</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Enhances decision-making, reduces manual work and improves accuracy.
+        </p>
+    </section>
+
+</div>
+
+
+<!-- Digital Solutions -->
+<div id="digitals" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('services')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>Digital Solutions</h1>
+        <p>Transforming businesses through digital innovation.</p>
+    </section>
+
+    <section class="detail-content">
+        <h2>What is Digital Solution?</h2>
+        <p>
+            Digital solutions help organizations adopt modern technologies
+            to streamline operations and improve customer experience.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Digital Transformation</li>
+            <li>✔ Automation Tools</li>
+            <li>✔ Cloud Integration</li>
+            <li>✔ UI/UX Optimization</li>
+            <li>✔ Data Analytics</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Improves efficiency, boosts growth and enhances digital presence.
+        </p>
+    </section>
+
+</div>
+
+
+<!-- IT Infrastructure Development -->
+<div id="infra" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('services')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>IT Infrastructure Development</h1>
+        <p>Robust and scalable IT systems for enterprises.</p>
+    </section>
+
+    <section class="detail-content">
+        <h2>What is IT Infrastructure?</h2>
+        <p>
+            IT infrastructure includes hardware, software and network systems
+            required for business operations and data management.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Network Setup</li>
+            <li>✔ Server Management</li>
+            <li>✔ Cloud Infrastructure</li>
+            <li>✔ Security Systems</li>
+            <li>✔ Data Backup Solutions</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Ensures smooth operations, security and high system performance.
+        </p>
+    </section>
+
+</div>
+
+
+
+<!-- VGST Solutions -->
+<div id="vgst" class="page detail-page">
+
+    <div class="back-btn" onclick="showPage('services')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>VGST Solutions</h1>
+        <p>Virtual Galaxy Smart Technology platform.</p>
+    </section>
+
+    <section class="detail-content">
+        <h2>What is VGST?</h2>
+        <p>
+            VGST provides innovative technology solutions for smart banking,
+            automation and enterprise digital systems.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Smart Automation</li>
+            <li>✔ Digital Banking Integration</li>
+            <li>✔ Enterprise Solutions</li>
+            <li>✔ Scalable Platforms</li>
+            <li>✔ Secure Systems</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Enhances innovation, improves efficiency and supports business growth.
+        </p>
+    </section>
+
+</div>
+
+
+
+<!-- DR & CR Management -->
+<div id="frdc" class="page detail-page">
+    <div class="back-btn" onclick="showPage('services')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>DR & CR Management</h1>
+        <p>Disaster Recovery & Data Center solutions.</p>
+    </section>
+
+    <section class="detail-content">
+        <h2>What is DR & CR?</h2>
+        <p>
+            Disaster Recovery and Data Center management ensures business continuity
+            and protection of critical data during failures.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Backup Systems</li>
+            <li>✔ Data Recovery</li>
+            <li>✔ Cloud Storage</li>
+            <li>✔ Risk Management</li>
+            <li>✔ 24/7 Monitoring</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Protects business data, reduces downtime and ensures reliability.
+        </p>
+    </section>
+
+</div>
+
+
+<!-- Mobile Computing Page -->
+<div id="Mobile" class="page detail-page">
+    <div class="back-btn" onclick="showPage('services')">← Back</div>
+
+    <section class="detail-hero">
+        <h1>Mobile Computing</h1>
+        <p>Modern mobile-based business solutions.</p>
+    </section>
+
+    <section class="detail-content">
+        <h2>What is Mobile Computing?</h2>
+        <p>
+            Mobile computing allows users to access applications and services
+            through smartphones and portable devices anytime, anywhere.
+        </p>
+
+        <h2>Key Features</h2>
+        <ul>
+            <li>✔ Mobile Apps</li>
+            <li>✔ Cloud Sync</li>
+            <li>✔ Real-time Access</li>
+            <li>✔ Secure Data Transfer</li>
+            <li>✔ Cross-platform Support</li>
+        </ul>
+
+        <h2>Benefits</h2>
+        <p>
+            Increases flexibility, improves productivity and enables remote access.
+        </p>
+    </section>
+
+</div>
+
+    <!-- End of Services -->
+
 
 
 <!-- IPO DETAIL PAGES -->
 <div id="ipo" class="page ipo-page">
-        <div class="back-btn" onclick="goBack()">← Back</div>
-        <h2>IPO Information</h2>
+    <div class="back-btn" onclick="goBack()">← Back</div>
+    <h2>IPO Information</h2>
+
     <div class="grid">
-        <div class="card ipo-card"> Draft Red Herring Prospectus (DRHP) </div>
-        <div class="card ipo-card"> Addendum to the DRHP </div>
-        <div class="card ipo-card"> RHP - Virtual Galaxy Infotech Limited </div>
-        <div class="card ipo-card"> Virtual Galaxy Investor Presentation - 25032025 </div>
-        <div class="card ipo-card"> Virtual Galaxy Prospectus </div>
+        <div class="card ipo-card" onclick="showIPODetail('drhp')">Draft Red Herring Prospectus (DRHP)</div>
+        <div class="card ipo-card" onclick="showIPODetail('addendum')">Addendum to the DRHP</div>
+        <div class="card ipo-card" onclick="showIPODetail('rhp')">RHP - Virtual Galaxy Infotech Limited</div>
+        <div class="card ipo-card" onclick="showIPODetail('presentation')">Investor Presentation - 25/03/2025</div>
+        <div class="card ipo-card" onclick="showIPODetail('prospectus')">Virtual Galaxy Prospectus</div>
+    </div>
+
+    <!-- DETAIL SECTION -->
+    <div id="ipoDetail" class="ipo-detail" style="display:none;">
+        <h3 id="ipoDetailTitle"></h3>
+        <p id="ipoDetailContent"></p>
+        <ul id="ipoDetailList"></ul>
+        <table id="ipoDetailTable"></table>
     </div>
 </div>
-
 
 
 <!-- investor DETAIL PAGES -->
@@ -280,17 +735,12 @@ financial analytics.
 
 
 <!-- CONTACT -->
-
 <div id="contact" class="page contact-page">
-
     <h2>Contact Virtual Galaxy</h2> 
-
     <div class="contact-container">
-
         <!-- LEFT SIDE MAP -->
         <div class="contact-left">
             <iframe src="https://maps.google.com/maps?q=Virtual%20Galaxy%20Infotech%20Nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-
             <div class="address-box">
                 <h3>Office Address</h3> 
                 <p>
@@ -298,42 +748,40 @@ financial analytics.
                     IT Park, Nagpur, Maharashtra<br>
                     India
                 </p>
-
                 <p>Phone: +91 9876543210</p> 
                 <p>Email: info@virtualgalaxy.com</p>
             </div>
         </div>
-
         <!-- RIGHT SIDE CONTACT FORM -->
         <div class="contact-right">
             <div class="about-page"></div>
             <h3>Contact / Inquiry</h3> 
             <p>Please tell us why you want to contact Virtual Galaxy.</p>
-
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Email Address" required>
-
-                <select required>
-                    <option value="">Select Purpose</option>
-                    <option>Investment Inquiry</option>
-                    <option>Job Opportunity</option>
-                    <option>Software / Product Inquiry</option>
-                    <option>Business Partnership</option>
-                    <option>Other</option>
-                </select>
-
-                <textarea placeholder="Write your message..." rows="5"></textarea>
-
-                <button class="btn">Send Message</button>
+            <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                            <select required>
+                                <option value="">Select Purpose</option>
+                                <option>Investment Inquiry</option>
+                                <option>Job Opportunity</option>
+                                <option>Software / Product Inquiry</option>
+                                <option>Business Partnership</option>
+                                <option>Other</option>
+                            </select>
+                        <textarea placeholder="Write your message..." rows="5"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
-
     </div>
 </div>
 
 
-    <!-- CORE BANKING FULL PAGE -->
+
+
+
+
+
+<!-- CORE BANKING FULL PAGE -->
 <div id="corebanking-detail" class="page detail-page">
 
     <div class="back-btn" onclick="showPage('products')">← Back</div>
@@ -483,7 +931,7 @@ financial analytics.
 
 
 <!-- digital-detail FULL PAGE -->
- <div id="digital-detail" class="page detail-page">
+<div id="digital-detail" class="page detail-page">
 
     <div class="back-btn" onclick="showPage('products')">← Back</div>
 
@@ -519,7 +967,7 @@ financial analytics.
 
 
 <!-- finflow-detail FULL PAGE -->
-  <div id="finflow-detail" class="page detail-page">
+<div id="finflow-detail" class="page detail-page">
 
     <div class="back-btn" onclick="showPage('products')">← Back</div>
 
@@ -555,8 +1003,8 @@ financial analytics.
 </div>
 
 
-<!-- post-detail FULL PAGE -->
-<div id="post-detail" class="page detail-page">
+<!-- Post Mortem MGMT FULL PAGE -->
+<div id="post-mortem-mgmt" class="page detail-page">
 
     <div class="back-btn" onclick="showPage('products')">← Back</div>
 
@@ -587,9 +1035,12 @@ financial analytics.
             Improves system reliability, reduces risks and ensures
             compliance with regulatory standards.
         </p>
-    </section>
 
+    <!--End of CORE BANKING FULL PAGE -->
+
+</section>
 </div>
+
     <script src="script.js"></script>
     </body>
     </html>
