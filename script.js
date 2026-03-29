@@ -1,15 +1,10 @@
 // PAGE SWITCH
 function showPage(pageId) {
-    let pages = document.querySelectorAll(".page");
-
-    pages.forEach(page => {
-        page.style.display = "none";
-    });
+    let pages = document.querySelectorAll(".page, .detail-page"); // ✅ fix
+    pages.forEach(page => page.style.display = "none");
 
     let activePage = document.getElementById(pageId);
-    if (activePage) {
-        activePage.style.display = "block";
-    }
+    if(activePage) activePage.style.display = "block";
 }
 
 // BACK BUTTON
@@ -63,3 +58,131 @@ window.addEventListener("load", function(){
     // default page
     showPage('home'); // ⚠️ make sure home id exists
 });
+
+// CONTACT FORM SUBMISSION
+window.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contactForm");
+    if(contactForm) {
+        contactForm.addEventListener("submit", function(e) {
+            e.preventDefault(); // page reload stop
+            alert("Your message has been sent. We will contact you as soon as possible!");
+            this.reset(); // form clear ho jaye
+        });
+    }
+});
+
+function showIPODetail(type) {
+    const detailSection = document.getElementById("ipoDetail");
+    const title = document.getElementById("ipoDetailTitle");
+    const content = document.getElementById("ipoDetailContent");
+    const list = document.getElementById("ipoDetailList");
+    const table = document.getElementById("ipoDetailTable");
+
+    // Reset
+    list.innerHTML = "";
+    table.innerHTML = "";
+
+    let data = {};
+
+    switch(type) {
+        case "drhp":
+            data.title = "Draft Red Herring Prospectus (DRHP)";
+            data.content = "Initial DRHP filed before IPO launch with company overview and financial highlights.";
+            data.items = ["Company Overview", "Financial Statements", "Objects of the Issue", "Risk Factors"];
+            data.table = [
+                ["Filing Date", "10-Jan-2025"],
+                ["Expected IPO Date", "01-Apr-2025"],
+                ["Price Band", "₹100-120 per share"],
+                ["Lot Size", "100 shares"]
+            ];
+            break;
+        case "addendum":
+            data.title = "Addendum to DRHP";
+            data.content = "Corrections and updates to the original DRHP.";
+            data.items = ["Revised financial data", "Updated risk disclosures", "Change in issue structure"];
+            data.table = [
+                ["Updated Filing Date", "20-Jan-2025"],
+                ["Revised Price Band", "₹105-125 per share"]
+            ];
+            break;
+        case "rhp":
+            data.title = "Red Herring Prospectus (RHP)";
+            data.content = "Final prospectus before IPO launch.";
+            data.items = ["Company History", "Management & Promoters", "Financial Performance"];
+            data.table = [
+                ["RHP Filing Date", "25-Feb-2025"],
+                ["IPO Open Date", "01-Apr-2025"],
+                ["IPO Close Date", "05-Apr-2025"],
+                ["Issue Price", "₹110 per share"],
+                ["Lot Size", "100 shares"],
+                ["Total Issue Size", "₹50 Crores"]
+            ];
+            break;
+        case "presentation":
+            data.title = "Investor Presentation";
+            data.content = "Presentation deck detailing IPO, business model, and growth prospects.";
+            data.items = ["Business Overview", "Financial Highlights", "Future Roadmap", "Market Opportunity"];
+            data.table = [
+                ["Presentation Date", "25-Mar-2025"],
+                ["Format", "PDF & PPT"],
+                ["Audience", "Investors & Analysts"]
+            ];
+            break;
+        case "prospectus":
+            data.title = "Virtual Galaxy Prospectus";
+            data.content = "Official prospectus document with all IPO details and legal disclosures.";
+            data.items = ["Company Information", "Risk Factors", "Financial Statements", "Use of Proceeds"];
+            data.table = [
+                ["Prospectus Date", "28-Mar-2025"],
+                ["Registrar", "ABC Capital Ltd."],
+                ["Lead Manager", "XYZ Securities"]
+            ];
+            break;
+    }
+
+    // Set title and content
+    title.textContent = data.title;
+    content.textContent = data.content;
+
+    // Set list items
+    data.items.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        list.appendChild(li);
+    });
+
+    // Set table
+    if(data.table.length > 0) {
+        let tableHTML = "<tr><th>Detail</th><th>Value</th></tr>";
+        data.table.forEach(row => {
+            tableHTML += `<tr><td>${row[0]}</td><td>${row[1]}</td></tr>`;
+        });
+        table.innerHTML = tableHTML;
+    }
+
+    detailSection.style.display = "block";
+}
+
+
+
+
+function openProfileFromCard(el){
+
+    // sab pages hide karo
+    document.querySelectorAll(".page").forEach(p => p.style.display = "none");
+
+    // profile page show karo
+    document.getElementById("profilePage").style.display = "block";
+
+    // data set karo
+    document.getElementById("pImg").src = el.dataset.img;
+    document.getElementById("pName").innerText = el.dataset.name;
+    document.getElementById("pRole").innerText = el.dataset.role;
+    document.getElementById("pExp").innerText = el.dataset.exp;
+    document.getElementById("pDesc").innerText = el.dataset.desc;
+}
+
+// back button
+function goBack(){
+    document.getElementById("profilePage").style.display = "none";
+    document.getElementById("WE").style.display = "block";}
