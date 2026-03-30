@@ -112,27 +112,6 @@ nav a{margin-left:10px;font-size:14px;}
 }
 
 
-/* BACK BUTTON - COMMON FOR ALL PAGES */
-.back-btn{
-  position:fixed;
-  top:20px;
-  left:20px;
-  background: rgba(0,0,0,0.4);
-  color:white;
-  border:none;
-  padding:8px 14px;
-  font-size:18px;
-  border-radius:8px;
-  cursor:pointer;
-  z-index:1000;
-  transition:0.3s;
-}
-
-.back-btn:hover{
-  background: rgba(0,0,0,0.7);
-}
-
-
 /* HERO SECTION */
 .hero{
 display:flex;
@@ -222,8 +201,10 @@ animation:floatPhone 4s ease-in-out infinite;}
 100%{transform:translateY(0px)}}
 /* END OF PHONE IMAGE */
 
-/* HOME BACKGROUND */
 
+
+
+/* HOME BACKGROUND */
 #home{
 background:url("https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=1920&q=80");
 background-size:cover;
@@ -299,16 +280,6 @@ transform:rotateY(10deg) rotateX(10deg) scale(1.05);
 border:1px solid #00ff88;
 box-shadow:0 20px 40px rgba(0,255,136,0.2);}
 
-.back-btn{
-position:fixed;
-top:90px;
-left:30px;
-padding:8px 16px;
-background:#00ff88;
-color:black;
-border-radius:20px;
-cursor:pointer;
-z-index:200;}
 /* END OF 3D CARD EFFECT */
 
 
@@ -642,7 +613,7 @@ box-shadow:0 20px 40px rgba(0,255,136,0.3);}
 
 /* IPO PAGE BACKGROUND */
     .ipo-page{
-    background-image:url("IPO.jpg");   
+    background-image:url("IPO.JPG");   
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -997,10 +968,7 @@ box-shadow:0 20px 40px rgba(0,255,136,0.3);}
     from{opacity:0;transform:translateY(40px);}
     to{opacity:1;transform:translateY(0);}}
 
-    #home .back-btn{
-    display:none;}
-
-
+   
     .hero{
     opacity:0;
     transform:scale(1.2);
@@ -1171,19 +1139,16 @@ box-shadow:0 20px 40px rgba(0,255,136,0.3);}
 
 /* BACK BUTTON */
 .back-btn{
-  position:fixed;      /* Fixed so it's outside about box */
+  position:fixed;
   top:20px;
   left:20px;
-  display:none;         /* Initially hidden */
-  background: rgba(0,0,0,0.3);
-  color: rgb(16, 1, 1);
-  border: none;
-  padding: 8px 15px;
-  font-size: 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-  z-index: 1000;
+  background:black;
+  color:white;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  z-index:9999;
+  display:none;
 }
 
 .back-btn:hover{
@@ -1273,9 +1238,21 @@ box-shadow:0 20px 40px rgba(0,255,136,0.3);}
 }
 
 
-.page, .detail-page {
-    display: none;
+.detail-page {
+    position: relative;
+    z-index: 1;   /* change from 0 → 1 */
 }
+
+.detail-page::before {
+    z-index: 0;   /* change from -1 → 0 */
+}
+
+
+
+#home {
+    display: block; /* default page */
+}
+
 
 /* HERO SECTION */
 .detail-hero{
@@ -1387,13 +1364,9 @@ box-shadow:0 20px 40px rgba(0,255,136,0.3);}
 
 
 
-
-
-
 /* WE Page Container */
 /* MAIN PAGE */
 #WE {
-    display: none;
     padding: 140px 8% 100px;
     min-height: 100vh;
     text-align: center;
@@ -1616,4 +1589,93 @@ box-shadow:0 20px 40px rgba(0,255,136,0.3);}
     margin-top:15px;
     line-height:1.6;
     color:#cbd5f5;
+}
+
+.back-btn{
+  position:fixed;
+  top:20px;
+  left:20px;
+
+  padding:10px 20px;
+  border-radius:10px;
+
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(10px);
+
+  color:#00ff88;
+  font-weight:bold;
+  font-size:14px;
+
+  border:1px solid rgba(255,255,255,0.2);
+
+  cursor:pointer;
+  z-index:9999;
+
+  transition:all 0.4s ease;
+}
+
+/* 🔥 HOVER EFFECT (Product jaisa) */
+.back-btn:hover{
+  background:rgba(0,255,136,0.15);
+  border:1px solid #00ff88;
+
+  transform:translateY(-3px) scale(1.05);
+
+  box-shadow:0 10px 30px rgba(0,255,136,0.4);
+}
+
+
+/* for phone vive */
+@media(max-width:768px){
+
+  /* NAVBAR */
+  header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+
+  /* HERO TEXT */
+  .hero-text h1{
+    font-size:26px;
+  }
+
+  /* CARDS GRID */
+  .explore-wrapper{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .explore-card{
+    width:90%;
+  }
+
+  /* TEAM SECTION */
+  .top-team, .team-container{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  /* PROFILE PAGE */
+  .profile-container{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  /* CONTACT */
+  .contact-container{
+    flex-direction:column;
+  }
+
+  /* BACK BUTTON */
+  .back-btn{
+    top:10px;
+    left:10px;
+    padding:8px 14px;
+    font-size:12px;
+  }
 }
