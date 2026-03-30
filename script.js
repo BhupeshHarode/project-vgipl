@@ -1,17 +1,3 @@
-// PAGE SWITCH
-function showPage(pageId) {
-    let pages = document.querySelectorAll(".page, .detail-page"); // ✅ fix
-    pages.forEach(page => page.style.display = "none");
-
-    let activePage = document.getElementById(pageId);
-    if(activePage) activePage.style.display = "block";
-}
-
-// BACK BUTTON
-function goBack(){
-    showPage('home'); // change if needed
-}
-
 /* RESET ANIMATIONS */
 function resetAnimations() {
     document.querySelectorAll(".slide-left, .slide-right").forEach(el => {
@@ -183,6 +169,89 @@ function openProfileFromCard(el){
 }
 
 // back button
-function goBack(){
-    document.getElementById("profilePage").style.display = "none";
-    document.getElementById("WE").style.display = "block";}
+// function goBack(){
+//     document.getElementById("profilePage").style.display = "none";
+//     document.getElementById("WE").style.display = "block";}
+
+let currentPage = "home";
+
+function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(page => {
+        page.style.display = 'none';
+    });
+
+    document.getElementById(pageId).style.display = 'block';
+
+    currentPage = pageId;
+
+    const backBtn = document.querySelector('.back-btn');
+
+    const explorePages = [
+        'explore','products','services',
+        'appdev','ai','digitals','infra','vgst','frdc','Mobile',
+        'corebanking-detail','mis-detail','post-mortem-mgmt',
+        'finflow-detail','cyber-detail','erp-detail','digital-detail'
+    ];
+
+    // ✅ Sirf explore flow me show
+    if (explorePages.includes(pageId)) {
+        backBtn.style.display = 'block';
+    } else {
+        backBtn.style.display = 'none';
+    }
+}
+
+
+   function goBack(){
+
+    // PRODUCTS / SERVICES → EXPLORE
+    if(currentPage === 'products' || currentPage === 'services'){
+        showPage('explore');
+    }
+
+    // SERVICE DETAILS → SERVICES
+    else if(
+        currentPage === 'appdev' || 
+        currentPage === 'ai' || 
+        currentPage === 'digitals' || 
+        currentPage === 'infra' || 
+        currentPage === 'vgst' || 
+        currentPage === 'frdc' || 
+        currentPage === 'Mobile'
+    ){
+        showPage('services');
+    }
+
+    // PRODUCT DETAILS → PRODUCTS
+    else if (
+        currentPage === 'corebanking-detail' || 
+        currentPage === 'mis-detail' || 
+        currentPage === 'post-mortem-mgmt' || 
+        currentPage === 'finflow-detail' || 
+        currentPage === 'cyber-detail' || 
+        currentPage === 'erp-detail' || 
+        currentPage === 'digital-detail'
+    ){
+        showPage('products');
+    }
+
+    // PROFILE → WE
+    else if(currentPage === 'profilePage'){
+        showPage('WE');
+    }
+
+    // 🔥 WE → WE (stay or no action)
+    else if(currentPage === 'WE'){
+        showPage('WE'); // ya yaha kuch na bhi kare to chalega
+    }
+
+    // 🔥 EXPLORE → HOME
+    else if(currentPage === 'explore'){
+        showPage('home');
+    }
+
+    // बाकी sab → HOME
+    else{
+        showPage('home');
+    }
+}
