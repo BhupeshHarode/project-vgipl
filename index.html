@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>VGIPL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <!-- html code start form hear -->
 
@@ -21,14 +22,16 @@
 </header>
 
 
-
+<!-- back btn -->
+ <div class="back-btn" onclick="goBack()"> ← </div>
+<!-- end of back btn -->
 
 <!-- we page  -->
 <div id="WE" class="page" style="display:none; text-align:center; padding:20px;">
     <h1>Our Team</h1>
 
 <!-- Leadership -->
-<h2>MD</h2>
+<!-- <h2>MD</h2> -->
 <div class="top-team">
 
 <div class="team-member reveal active"
@@ -346,8 +349,7 @@ financial analytics.
 
 <!-- EXPLORE PAGE -->
  <div id="explore" class="page explore-page">
-    <div class="back-btn" onclick="goBack()">← Back</div>
-        <h2 class="explore-title">Explore Our Solutions</h2>
+            <h2 class="explore-title">Explore Our Solutions</h2>
         <p class="explore-sub">Powerful fintech products and enterprise services designed for modern banking.</p>
     <div class="explore-wrapper">
         <div class="explore-card product-card" onclick="showPage('products')">
@@ -373,7 +375,7 @@ financial analytics.
 
 <!-- PRODUCTS -->
 <div id="products" class="page explore-page">
-<div class="back-btn" onclick="showPage('explore')">← Back</div>
+
     <h2 class="explore-title">Our Products</h2>
     <p class="explore-sub">Innovative banking and fintech software solutions.</p>
 <div class="explore-wrapper">
@@ -416,7 +418,7 @@ financial analytics.
 <!-- SERVICES -->
  
 <div id="services" class="page explore-page">
-    <div class="back-btn" onclick="goBack()">← Back</div>
+    
     <h2>Our Services</h2>
 <div class="grid">
 
@@ -453,9 +455,14 @@ financial analytics.
 
 <!-- SERVICE DETAIL PAGES -->
 <!-- Services page in detial -->
+ 
      <!-- Application Development -->
+      <div id="services" class="page">
+    <h1>Our Services</h1>
+    <div onclick="showPage('appdev')">Application Development</div>
+</div>
     <div id="appdev" class="page detail-page">
-    <div class="back-btn" onclick="showPage('services')">← Back</div>
+        
     <section class="detail-hero">
         <h1>Application Development</h1>
         <p>Custom enterprise-grade software solutions.</p>
@@ -488,7 +495,7 @@ financial analytics.
 
     <!-- AI & ML Solutions -->
     <div id="ai" class="page detail-page">
-    <div class="back-btn" onclick="showPage('services')">← Back</div>
+  
     <section class="detail-hero">
         <h1>AI & ML Solutions</h1>
         <p>Smart automation using Artificial Intelligence.</p>
@@ -522,7 +529,6 @@ financial analytics.
 <!-- Digital Solutions -->
 <div id="digitals" class="page detail-page">
 
-    <div class="back-btn" onclick="showPage('services')">← Back</div>
 
     <section class="detail-hero">
         <h1>Digital Solutions</h1>
@@ -556,8 +562,7 @@ financial analytics.
 
 <!-- IT Infrastructure Development -->
 <div id="infra" class="page detail-page">
-
-    <div class="back-btn" onclick="showPage('services')">← Back</div>
+    
 
     <section class="detail-hero">
         <h1>IT Infrastructure Development</h1>
@@ -592,8 +597,7 @@ financial analytics.
 
 <!-- VGST Solutions -->
 <div id="vgst" class="page detail-page">
-
-    <div class="back-btn" onclick="showPage('services')">← Back</div>
+    
 
     <section class="detail-hero">
         <h1>VGST Solutions</h1>
@@ -628,7 +632,7 @@ financial analytics.
 
 <!-- DR & CR Management -->
 <div id="frdc" class="page detail-page">
-    <div class="back-btn" onclick="showPage('services')">← Back</div>
+    
 
     <section class="detail-hero">
         <h1>DR & CR Management</h1>
@@ -662,7 +666,7 @@ financial analytics.
 
 <!-- Mobile Computing Page -->
 <div id="Mobile" class="page detail-page">
-    <div class="back-btn" onclick="showPage('services')">← Back</div>
+  
 
     <section class="detail-hero">
         <h1>Mobile Computing</h1>
@@ -692,20 +696,12 @@ financial analytics.
     </section>
 
 </div>
-
-    <!-- End of Services -->
+<!-- End of Services -->
 
 
 
 <!-- IPO DETAIL PAGES -->
-<div id="ipo" class="page ipo-page"
-     style="background-image: url('IPO.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh;
-            position: relative;">
-    <div class="back-btn" onclick="goBack()">← Back</div>
+<div id="ipo" class="page ipo-page">
     <h2>IPO Information</h2>
 
     <div class="grid">
@@ -728,7 +724,6 @@ financial analytics.
 
 <!-- investor DETAIL PAGES -->
 <div id="investor" class="page investor-page">
-        <div class="back-btn" onclick="goBack()">← Back</div>
         <h2>Investor Information</h2>
     <p>Investor relations section containing company financial reports,corporate governance information and shareholder updates.</p>
     <div class="grid">
@@ -790,7 +785,7 @@ financial analytics.
 <!-- CORE BANKING FULL PAGE -->
 <div id="corebanking-detail" class="page detail-page">
 
-    <div class="back-btn" onclick="showPage('products')">← Back</div>
+    
 
     <section class="detail-hero">
         <h1>Core Banking Solution</h1>
@@ -826,7 +821,7 @@ financial analytics.
  <!-- MIS FULL PAGE -->
 <div id="mis-detail" class="page detail-page">
 
-    <div class="back-btn" onclick="showPage('products')">← Back</div>
+    
 
     <section class="detail-hero">
         <h1>MIS Solution</h1>
@@ -864,7 +859,7 @@ financial analytics.
  <!-- ERP FULL PAGE -->
   <div id="erp-detail" class="page detail-page">
 
-    <div class="back-btn" onclick="showPage('products')">← Back</div>
+    
 
     <section class="detail-hero">
         <h1>ERP Solution</h1>
@@ -902,7 +897,7 @@ financial analytics.
 <!-- cyber-detail FULL PAGE -->
 <div id="cyber-detail" class="page detail-page">
 
-    <div class="back-btn" onclick="showPage('products')">← Back</div>
+    
 
     <section class="detail-hero">
         <h1>Cyber Security</h1>
@@ -939,7 +934,7 @@ financial analytics.
 <!-- digital-detail FULL PAGE -->
 <div id="digital-detail" class="page detail-page">
 
-    <div class="back-btn" onclick="showPage('products')">← Back</div>
+   
 
     <section class="detail-hero">
         <h1>Digital Payment System</h1>
@@ -975,7 +970,7 @@ financial analytics.
 <!-- finflow-detail FULL PAGE -->
 <div id="finflow-detail" class="page detail-page">
 
-    <div class="back-btn" onclick="showPage('products')">← Back</div>
+   
 
     <section class="detail-hero">
         <h1>Fin Flow System</h1>
@@ -1012,7 +1007,7 @@ financial analytics.
 <!-- Post Mortem MGMT FULL PAGE -->
 <div id="post-mortem-mgmt" class="page detail-page">
 
-    <div class="back-btn" onclick="showPage('products')">← Back</div>
+    
 
     <section class="detail-hero">
         <h1>Post-Mortem Management</h1>
